@@ -1,6 +1,17 @@
 # 3D Procedurally Generated Terrain
 A little project I did to learn about OpenGL and perlin noise. It evolved out of an effort to flesh out a wireframe prototype, and ended up being a months-long journey of learning OpenGL. As a result, LOTS of the code is copy-pasted due to me being impatient and just trying to get a 3D model going. I've linked as many of the papers and sources I've copied and learned from below.
 
+Controls are:
+ - [W,A,S,D] to move
+ - [Space] to ascend, [LShift] to descend
+ - Mouse to pan around
+ - Scroll to increase movement speed
+ - [O] to toggle between wide and narrow view
+ - [F] to freeze chunk loading (recommended for loading large chunks at a time)
+ - [Z] to toggle between zero effects, fresnel water and shadows, and FFT water and shadows (zero effect mode recommended for exploring)
+ - [M] to toggle wireframe mode
+ - [F3] to toggle statistics
+
 ## Sources
 
  - Perlin noise: https://en.wikipedia.org/wiki/Perlin_noise
