@@ -349,3 +349,4 @@ healthchecksdb
 MigrationBackup/
 
 [Dd]esktop.ini
+ignored-bu/
