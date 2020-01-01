@@ -3,12 +3,13 @@
 #include <iostream>
 #include <cassert>
 #include <array>
-#define STB_IMAGE_STATIC
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+#include "render-util\stb_image.h"
 #include "chunk\TerrainMesh.h"
 #include "chunk\Chunk.h"
 #include <fstream>
+
+#define STB_IMAGE_STATIC
+#define STB_IMAGE_IMPLEMENTATION
 
 const unsigned int SHADOW_WIDTH = 8192, SHADOW_HEIGHT = 8192;
 

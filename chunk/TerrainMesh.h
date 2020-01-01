@@ -7,11 +7,9 @@
 #include <vector>
 #include <array>
 #include "RenderInfo.h"
-#include "../Model.h"
 
 #include "TerrainBuilder.h"
 #include "NormalCalculate.h"
-#include "TerrainColorer.h"
 
 struct StitchEdge
 {
@@ -70,7 +68,6 @@ class TerrainMesh
 public:
 	friend struct TerrainBuilder;
 	friend struct NormalCalculate;
-	friend struct TerrainColorer;
 
 	//const Mesh getMesh();
 

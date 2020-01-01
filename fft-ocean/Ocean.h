@@ -1,5 +1,5 @@
 #pragma once
-#include "chunk\WaterMesh.h"
+#include "..\chunk\WaterMesh.h"
 #include "complex.h"
 #include "fft.h"
 

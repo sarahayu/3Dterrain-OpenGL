@@ -1,6 +1,6 @@
 #include "ChunkManager.h"
-#include "util/MathUtils.h"
-#include "util\Frustum.h"
+#include "math-util\MathUtils.h"
+#include "math-util\Frustum.h"
 #include <iostream>
 #include <future>
 

@@ -6,8 +6,7 @@
 #include <list>
 #include <set>
 #include "chunk\Chunk.h"
-#include "Model.h"
-#include "Ocean.h"
+#include "fft-ocean\Ocean.h"
 
 class Frustum;
 class Shader;

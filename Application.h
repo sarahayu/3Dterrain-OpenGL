@@ -5,14 +5,15 @@
 #include <queue>
 #include <set>
 #include <list>
-#include "Camera.h"
-#include "Shader.h"
-#include "Textures.h"
-#include "FBO.h"
+#include "render-util\Camera.h"
+#include "render-util\Shader.h"
+#include "render-util\Shader.h"
+#include "render-util\Textures.h"
+#include "render-util\FBO.h"
 #include "Skybox.h"
-#include "util/FPS.h"
-#include "util/Frustum.h"
-#include "util/StatUtils.h"
+#include "math-util\FPS.h"
+#include "math-util\Frustum.h"
+#include "math-util\StatUtils.h"
 #include "ChunkManager.h"
 #include "GUIStats.h"
 

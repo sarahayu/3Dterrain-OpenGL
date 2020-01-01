@@ -20,33 +20,31 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
-    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="render-util\Camera.cpp" />
     <ClCompile Include="ChunkManager.cpp" />
     <ClCompile Include="chunk\Chunk.cpp" />
     <ClCompile Include="chunk\NormalCalculate.cpp" />
     <ClCompile Include="chunk\TerrainBuilder.cpp" />
     <ClCompile Include="chunk\TerrainMesh.cpp" />
     <ClCompile Include="chunk\WaterMesh.cpp" />
-    <ClCompile Include="complex.cpp" />
-    <ClCompile Include="FBO.cpp" />
-    <ClCompile Include="fft.cpp" />
+    <ClCompile Include="fft-ocean\complex.cpp" />
+    <ClCompile Include="render-util\FBO.cpp" />
+    <ClCompile Include="fft-ocean\fft.cpp" />
     <ClCompile Include="GUIStats.cpp" />
-    <ClCompile Include="Model.cpp" />
-    <ClCompile Include="Ocean.cpp" />
-    <ClCompile Include="ScreenOverlay.cpp" />
-    <ClCompile Include="util\FPS.cpp" />
-    <ClCompile Include="util\Frustum.cpp" />
+    <ClCompile Include="fft-ocean\Ocean.cpp" />
+    <ClCompile Include="math-util\FPS.cpp" />
+    <ClCompile Include="math-util\Frustum.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="util\MathUtils.cpp" />
+    <ClCompile Include="math-util\MathUtils.cpp" />
     <ClCompile Include="Skybox.cpp" />
     <ClCompile Include="TerrainGen.cpp" />
-    <ClCompile Include="Shader.cpp" />
-    <ClCompile Include="Textures.cpp" />
-    <ClCompile Include="util\StatUtils.cpp" />
+    <ClCompile Include="render-util\Shader.cpp" />
+    <ClCompile Include="render-util\Textures.cpp" />
+    <ClCompile Include="math-util\StatUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
-    <ClInclude Include="Camera.h" />
+    <ClInclude Include="render-util\Camera.h" />
     <ClInclude Include="ChunkManager.h" />
     <ClInclude Include="ChunkRenderer.h" />
     <ClInclude Include="chunk\Chunk.h" />
@@ -55,26 +53,23 @@
     <ClInclude Include="chunk\TerrainBuilder.h" />
     <ClInclude Include="chunk\TerrainMesh.h" />
     <ClInclude Include="chunk\WaterMesh.h" />
-    <ClInclude Include="complex.h" />
-    <ClInclude Include="FBO.h" />
-    <ClInclude Include="fft.h" />
+    <ClInclude Include="fft-ocean\complex.h" />
+    <ClInclude Include="render-util\FBO.h" />
+    <ClInclude Include="fft-ocean\fft.h" />
     <ClInclude Include="GUIStats.h" />
-    <ClInclude Include="Model.h" />
-    <ClInclude Include="Ocean.h" />
-    <ClInclude Include="ScreenOverlay.h" />
-    <ClInclude Include="Stats.h" />
-    <ClInclude Include="util\FPS.h" />
-    <ClInclude Include="util\Frustum.h" />
-    <ClInclude Include="util\MathUtils.h" />
-    <ClInclude Include="Shader.h" />
+    <ClInclude Include="fft-ocean\Ocean.h" />
+    <ClInclude Include="math-util\FPS.h" />
+    <ClInclude Include="math-util\Frustum.h" />
+    <ClInclude Include="math-util\MathUtils.h" />
+    <ClInclude Include="render-util\Shader.h" />
     <ClInclude Include="Skybox.h" />
-    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="render-util\stb_image.h" />
     <ClInclude Include="terrain\GeneratorParams.h" />
     <ClInclude Include="terrain\Renderer.h" />
     <ClInclude Include="terrain\TerrainMesh.h" />
     <ClInclude Include="terrain\TerrainParams.h" />
-    <ClInclude Include="Textures.h" />
-    <ClInclude Include="util\StatUtils.h" />
+    <ClInclude Include="render-util\Textures.h" />
+    <ClInclude Include="math-util\StatUtils.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -154,14 +149,14 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\sarah\Google Drive\Sarah\C++\sfml.old\include;C:\Users\sarah\Google Drive\Sarah\C++\glad\include;C:\Users\sarah\Google Drive\Sarah\C++\glfw\include;C:\Users\sarah\Google Drive\Sarah\C++\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Google Drive\Sarah\C++\SFML\include;E:\Google Drive\Sarah\C++\glad\include;E:\Google Drive\Sarah\C++\glfw\include;E:\Google Drive\Sarah\C++\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>sfml-system-s.lib;sfml-audio-s.lib;sfml-graphics-s.lib;sfml-network-s.lib;sfml-window-s.lib;opengl32.lib;freetype.lib;jpeg.lib;winmm.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\sarah\Google Drive\Sarah\C++\sfml.old\lib;C:\Users\sarah\Google Drive\Sarah\C++\glfw\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-s.lib;sfml-audio-s.lib;sfml-graphics-s.lib;sfml-network-s.lib;sfml-window-s.lib;opengl32.lib;freetype.lib;winmm.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\Google Drive\Sarah\C++\SFML\lib;E:\Google Drive\Sarah\C++\glfw\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
