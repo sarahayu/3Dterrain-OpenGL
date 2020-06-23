@@ -1,5 +1,5 @@
 # 3D Procedurally Generated Terrain
-A little project I did to learn about OpenGL and perlin noise. It evolved out of an effort to flesh out a wireframe prototype, and ended up being a months-long journey of learning OpenGL. As a result, LOTS of the code is copy-pasted due to me being impatient and just trying to get a 3D model going. I've linked as many of the papers and sources I've copied and learned from below.
+A little project I did to learn about OpenGL and perlin noise. It evolved out of an effort to flesh out a wireframe prototype, and ended up being a months-long journey of learning OpenGL. As a result, LOTS of the GLSL code is copy-pasted due to me being impatient and just trying to get a 3D model going. I've linked as many of the papers and sources I've copied and learned from below.
 
 ## Sources
 
